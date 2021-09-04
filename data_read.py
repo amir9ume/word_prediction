@@ -16,7 +16,7 @@ class Data_Preprocess:
             Choice 5,6 columns corrupt on both Train and Test set.
             Replacing those NaN with <pad> tokens
             '''
-            self.df= pd.read_csv(file_path).sample(frac=0.5)
+            self.df= pd.read_csv(file_path).sample(frac=1)
             self.train_flag= train_flag
             
             self.df['choice5'] = self.df['choice5'].replace(np.nan, '<pad>')
