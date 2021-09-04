@@ -40,7 +40,7 @@ else:
     val_dataset=torch.load('./data/coveo_val_data.pt')
     print('Train data loaded')
 
-batch_size=2
+batch_size=64
 train_dataloader = DataLoader( train_dataset, sampler = RandomSampler(train_dataset), 
             batch_size = batch_size 
         )
@@ -53,7 +53,7 @@ loss=torch.nn.CrossEntropyLoss()
 model= MCQ_Filler().to(device)
 optimizer = AdamW(model.parameters(),lr = 2e-5, eps = 1e-8 )
 
-epochs = 2
+epochs = 5
 total_steps = len(train_dataloader) * epochs
 scheduler = get_linear_schedule_with_warmup(optimizer, 
                                             num_warmup_steps = 0, # Default value in run_glue.py
