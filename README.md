@@ -12,6 +12,8 @@
 | 8   |    2.35     |    45%   |
 
 ================================================================
+
+
 Please run word_prediction.py to train model. 
 
 Specify train data location with path_train_data. For example './data/train.csv'
