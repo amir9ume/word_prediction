@@ -1,5 +1,17 @@
 # word_prediction model
 
+| Epoch      | Validation loss | Validation Accuracy     |
+| :---        |    :----   |          :---: |
+| 1      |  3.42      | 30%   |
+| 2   |   3.14      |   33%    |
+| 3      |    2.98    |  36%  |
+| 4   |   2.77      |   38%    |
+| 5      |    2.71    |  39%  |
+| 6   |    2.42     |   43%    |
+| 7      |  2.36      | 44%   |
+| 8   |    2.35     |    45%   |
+
+================================================================
 Please run word_prediction.py to train model. 
 
 Specify train data location with path_train_data. For example './data/train.csv'
