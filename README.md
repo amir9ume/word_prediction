@@ -38,4 +38,4 @@ data_read.py contains Data Loader. Currently sampling fraction of data set is se
 but can be changed between 0-1 values.
 
 model.py contains code for the model, which is an XLM-Roberta Model , using the XLM-Roberta tokenizers.
-Pre-trained model taken from hugging face and then trained using the 6 choice blank word prediction task.
+Pre-trained model taken from hugging face and then fine-tuned for the word prediction task.
